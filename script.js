@@ -20,7 +20,7 @@ form.addEventListener('submit', async (e) => {
 });
 
 async function loadStudents() {
-    const res = await fetch('http://localhost:8080/api/students');
+    const res = await fetch('https://springhello-production.up.railway.app/api/students');
     const data = await res.json();
 
     list.innerHTML = '';
